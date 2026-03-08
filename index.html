@@ -13,7 +13,7 @@
 <nav class="navbar" role="navigation">
   <div class="container navbar-inner">
     <a href="index.html" class="navbar-logo">
-      <img src="assets/Hive Logo White.png" alt="Your Hive" style="filter:invert(35%) sepia(80%) saturate(500%) hue-rotate(140deg);">
+      <img src="assets/Hive Logo White.png" alt="Your Hive" >
       <span>YOUR HIVE</span>
     </a>
     <div class="navbar-nav">
@@ -31,8 +31,7 @@
   <div class="container">
     <div class="hero-content reveal">
       <div class="hero-badges">
-        <span class="hero-badge">Spring Break 1</span>
-        <span class="hero-badge">Spring Break 2</span>
+        <span class="hero-badge">Spring Break</span>
         <span class="hero-badge">Summer Camp</span>
       </div>
       <h1>Money Explorers Camp: Start Your Child's Financial Adventure!</h1>
@@ -117,26 +116,26 @@
 
     <!-- Session Selector -->
     <div class="grid-2 mb-12 reveal" style="max-width:720px;margin-left:auto;margin-right:auto;gap:1rem;">
-      <button class="session-card selected" data-session="spring1">
+      <button class="session-card selected" data-session="spring2">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;">
-          <span class="badge badge-teal">Spring Break 1</span>
+          <span class="badge badge-teal">Spring Break</span>
           <span style="color:var(--teal);">✓</span>
-        </div>
-        <div style="font-weight:600;color:var(--gray-900);margin-bottom:0.25rem;">Apr 6–10, 2026</div>
-        <div style="font-size:0.85rem;color:var(--gray-600);margin-bottom:0.5rem;">Phinney Center</div>
-        <div style="display:flex;justify-content:space-between;font-size:0.875rem;">
-          <span style="color:var(--gray-500);">25 spots</span>
-          <span style="font-weight:600;color:var(--teal);">$700</span>
-        </div>
-      </button>
-      <button class="session-card unselected" data-session="spring2">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;">
-          <span class="badge badge-teal">Spring Break 2</span>
         </div>
         <div style="font-weight:600;color:var(--gray-900);margin-bottom:0.25rem;">Apr 13–17, 2026</div>
         <div style="font-size:0.85rem;color:var(--gray-600);margin-bottom:0.5rem;">Your Hive Learning Center</div>
         <div style="display:flex;justify-content:space-between;font-size:0.875rem;">
           <span style="color:var(--gray-500);">12 spots</span>
+          <span style="font-weight:600;color:var(--teal);">$700</span>
+        </div>
+      </button>
+      <button class="session-card unselected" data-session="summer">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;">
+          <span class="badge badge-teal">Summer Camp</span>
+        </div>
+        <div style="font-weight:600;color:var(--gray-900);margin-bottom:0.25rem;">Jul 27–31, 2026</div>
+        <div style="font-size:0.85rem;color:var(--gray-600);margin-bottom:0.5rem;">Your Hive Learning Center</div>
+        <div style="display:flex;justify-content:space-between;font-size:0.875rem;">
+          <span style="color:var(--gray-500);">25 spots</span>
           <span style="font-weight:600;color:var(--teal);">$700</span>
         </div>
       </button>
@@ -147,8 +146,8 @@
       <div class="detail-card">
         <div class="detail-icon">📅</div>
         <div class="detail-sub">Dates</div>
-        <div class="detail-val" id="detail-dates">Apr 6–10, 2026</div>
-        <div class="detail-info" id="detail-season">Spring Break 1</div>
+        <div class="detail-val" id="detail-dates">Apr 13–17, 2026</div>
+        <div class="detail-info" id="detail-season">Spring Break</div>
       </div>
       <div class="detail-card">
         <div class="detail-icon">🕐</div>
@@ -165,8 +164,8 @@
       <div class="detail-card">
         <div class="detail-icon">📍</div>
         <div class="detail-sub">Location</div>
-        <div class="detail-val" id="detail-location">Phinney Center</div>
-        <div class="detail-info" id="detail-address">6532 Phinney Ave N, Seattle</div>
+        <div class="detail-val" id="detail-location">Your Hive Learning Center</div>
+        <div class="detail-info" id="detail-address">2843 NW 69th St, Seattle</div>
       </div>
     </div>
     <div class="text-center mt-8 reveal">
@@ -301,7 +300,6 @@
       <!-- Spring Break -->
       <div class="card text-center" style="border:2px solid var(--teal);">
         <div style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--teal-50);color:var(--teal);font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.3rem 0.75rem;border-radius:9999px;margin-bottom:1.25rem;">Spring Break</div>
-        <h3 class="heading-3 mb-1">Apr 6–10 or Apr 13–17</h3>
         <p style="font-size:0.9rem;color:var(--gray-500);margin-bottom:0.5rem;">9:00 AM – 4:00 PM · Ages 8–13</p>
         <p style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--teal);margin-bottom:1.5rem;">$700</p>
         <p style="font-size:0.8rem;color:var(--gray-500);margin-bottom:1.5rem;">Taxes &amp; materials included</p>
@@ -425,8 +423,8 @@
 <script>
   // Session selector dynamic detail update
   const sessionData = {
-    spring1: { dates:'Apr 6–10, 2026', season:'Spring Break 1', location:'Phinney Center', address:'6532 Phinney Ave N, Seattle' },
-    spring2: { dates:'Apr 13–17, 2026', season:'Spring Break 2', location:'Your Hive Learning Center', address:'2843 NW 69th St, Seattle' },
+    spring2: { dates:'Apr 13–17, 2026', season:'Spring Break', location:'Your Hive Learning Center', address:'2843 NW 69th St, Seattle' },
+    summer:  { dates:'Jul 27–31, 2026',  season:'Summer Camp',  location:'Your Hive Learning Center', address:'2843 NW 69th St, Seattle' },
   };
   document.querySelectorAll('.session-card').forEach(card => {
     card.addEventListener('click', () => {
